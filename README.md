@@ -4,46 +4,46 @@ The search bar is a functionality wherein a user can click on the search bar and
 
 ### Architecture
 
-The source has a components folder which comprises of the main component SearchBar and its
+- The source has a components folder which comprises of the main component SearchBar and its
 corresponding styling and testing files.
 
-The source also has a utilities folder containing the Helper file which includes the main
+- The source also has a utilities folder containing the Helper file which includes the main
 logic behind the manipulation of the JSON data received from the API.
 
-A test file and a css file are also included wherein the testing has been done using the React Testing Library.
+- A test file and a css file are also included wherein the testing has been done using the React Testing Library.
 
 ### SearchBar.js
 
-This component initially makes an API call to the endpoint to get the list of managers and then
+- This component initially makes an API call to the endpoint to get the list of managers and then
 sends the data to the Helper component which filters out the required managers data, create a new
 wrapper of JSON and sends it back to the Searchbar component.
 
-This data is returned and rendered using the higher order map functionality as buttons so that this code
+- This data is returned and rendered using the higher order map functionality as buttons so that this code
 can be reused if a new manager is added to the JSON pack. (Reusability)
 
-Upkey and Downkey have been used in this component to scroll the list up and down. On pressing the enter key, the selected manager's display name gets added into the search bar. (Accessibility)
+- Upkey and Downkey have been used in this component to scroll the list up and down. On pressing the enter key, the selected manager's display name gets added into the search bar. (Accessibility)
 
-6 States have been used to manipulate data using the useState hook. These are used to hide and show the manager scrollable list, inserting data into the list, removing data from the list, setting the search term and setting the search results.
+- 6 States have been used to manipulate data using the useState hook. These are used to hide and show the manager scrollable list, inserting data into the list, removing data from the list, setting the search term and setting the search results.
 
 ### Helper.js
 
-This is the main logic of the code where the acquired data is filtered for the displayName, email, initial first name letter, initial last name letter and the search key. A new wrapper of JSON is constructed with these fields and sent back to the SearchBar component.
+- This is the main logic of the code where the acquired data is filtered for the displayName, email, initial first name letter, initial last name letter and the search key. A new wrapper of JSON is constructed with these fields and sent back to the SearchBar component.
 
-### SearchBar.test.js (Testability)
+### SearchBar.test.js 
 
-The testing of the code has been done using the React Testing Library. The following functionality has been unit tested ->
+The testing of the code has been done using the React Testing Library. The following functionality has been unit tested -> (Testability)
 
-Should check if the placeholder text is rendered correctly.
-Should be able to type in the searchbar.
-Should be able find the button display block when clicking the searchbar.
-Should be able find all the 9 display buttons after clicking on the searchbar.
-Should be able to get 2 elements after typing har.
-Should be able to select the search value on click.
-Should not be able to find the button block after a value has been selected.
+- Should check if the placeholder text is rendered correctly.
+- Should be able to type in the searchbar.
+- Should be able find the button display block when clicking the searchbar.
+- Should be able find all the 9 display buttons after clicking on the searchbar.
+- Should be able to get 2 elements after typing har.
+- Should be able to select the search value on click.
+- Should not be able to find the button block after a value has been selected.
 
 ### SearchBar.css
 
-Contains all the styling classes for the divs and button.
+- Contains all the styling classes for the divs and button.
 
 ## Available Scripts
 
