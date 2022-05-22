@@ -1,0 +1,89 @@
+.searchInputs {
+  margin-top: 200px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 1) 10px 10px 15px;
+}
+
+.search input {
+  background-color: whitesmoke;  
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+}
+
+.searchIcon {  
+  height: 60px;
+  width: 50px;
+  background-color: whitesmoke;  
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline:black;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.dataResult {
+  margin-top: 15px;
+  width: 380px;
+  height: 100px;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 1) 10px 10px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataContent  {
+  flex:auto;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.box {
+  background: black;
+  border-radius: 9px;
+  width: 35px;
+  height: 35px; 
+  margin-left: 10px;
+}
+
+.initialsStyle {
+  color: white  ;
+  font-weight:bolder;
+  font-size:medium;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top:8px;   
+}
+
+button:hover {
+  background-color:plum;
+  cursor: pointer;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
